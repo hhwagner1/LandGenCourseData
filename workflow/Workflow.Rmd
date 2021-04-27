@@ -10,8 +10,8 @@ library(datastorr)
 ```
 
 ```{r}
-stickleback_data <- writeLines(autogenerate(repo="hhwagner1/LandGenCourse", read="read.table",
-            filename="stickleback_data.txt", name="LandGenCourseData"))
+stickleback_data <- writeLines(autogenerate(repo="hhwagner1/LandGenCourseData", read="read.table",
+            filename="stickleback_data.txt", name="stickleback_data"))
 ```
 
 ```{r}
