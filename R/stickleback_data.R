@@ -1,6 +1,6 @@
 ##' Download the example data set from hhwagner1/LandGenCourseData
 ##'  (\url{https://github.com/hhwagner1/LandGenCourseData/})
-##' @title Download example data set
+##' @title Stickleback data
 ##'
 ##' @param version Version number.  The default will load the most
 ##'   recent version on your computer or the most recent version known
@@ -16,7 +16,7 @@
 ##'   use a different path).
 ##'
 ##' @export
-mydata <- function(version = NULL, path = NULL) {
+stickleback_data <- function(version = NULL, path = NULL) {
   datastorr::github_release_get(stickleback_data_info(path), version)
 }
 

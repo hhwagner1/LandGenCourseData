@@ -222,7 +222,9 @@ pre code {
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>Import data sets</p>
+<p>Import data sets:</p>
+<p>Copy-paste the output of this code into the corresponding R files.</p>
+<p>IMPORTANT: then find-replace “mydata” by “stickleback_data” or equivalent (filename)</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxud3JpdGVMaW5lcyhhdXRvZ2VuZXJhdGUocmVwbz1cImhod2FnbmVyMS9MYW5kR2VuQ291cnNlRGF0YVwiLCByZWFkPVwicmVhZC50YWJsZVwiLFxuICAgICAgICAgICAgZmlsZW5hbWU9XCJzdGlja2xlYmFja19kYXRhLlJcIiwgbmFtZT1cInN0aWNrbGViYWNrX2RhdGFcIikpXG5gYGAifQ== -->
@@ -233,103 +235,35 @@ pre code {
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3RpY2tsZWJhY2tfZGF0YS5SIDwtIHdyaXRlTGluZXMoYXV0b2dlbmVyYXRlKHJlcG89XCJoaHdhZ25lcjEvTGFuZEdlbkNvdXJzZURhdGFcIiwgcmVhZD1cImZpbGUuY29weVwiLFxuICAgICAgICAgICAgZmlsZW5hbWU9XCJzdGlja2xlYmFjay5nZW5vXCIsIG5hbWU9XCJzdGlja2xlYmFja19kYXRhXCIpKVxuYGBgIn0= -->
-<pre class="r"><code>stickleback_data.R &lt;- writeLines(autogenerate(repo=&quot;hhwagner1/LandGenCourseData&quot;, read=&quot;file.copy&quot;,
-            filename=&quot;stickleback.geno&quot;, name=&quot;stickleback_data&quot;))</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3RpY2tsZWJhY2tfY29vcmRpbmF0ZXMuUiA8LSB3cml0ZUxpbmVzKGF1dG9nZW5lcmF0ZShyZXBvPVwiaGh3YWduZXIxL0xhbmRHZW5Db3Vyc2VEYXRhXCIsIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICByZWFkPVwicmVhZC5jc3ZcIixcbiAgICAgICAgICAgIGZpbGVuYW1lPVwic3RpY2tsZWJhY2tfZGF0YS5SXCIsIG5hbWU9XCJzdGlja2xlYmFja19jb29yZGluYXRlc1wiKSlcbmBgYCJ9 -->
-<pre class="r"><code>stickleback_coordinates.R &lt;- writeLines(autogenerate(repo=&quot;hhwagner1/LandGenCourseData&quot;, 
-                                                     read=&quot;read.csv&quot;,
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxud3JpdGVMaW5lcyhhdXRvZ2VuZXJhdGUocmVwbz1cImhod2FnbmVyMS9MYW5kR2VuQ291cnNlRGF0YVwiLCByZWFkPVwicmVhZC5jc3ZcIixcbiAgICAgICAgICAgIGZpbGVuYW1lPVwic3RpY2tsZWJhY2tfZGF0YS5SXCIsIG5hbWU9XCJzdGlja2xlYmFja19jb29yZGluYXRlc1wiKSlcbmBgYCJ9 -->
+<pre class="r"><code>writeLines(autogenerate(repo=&quot;hhwagner1/LandGenCourseData&quot;, read=&quot;read.csv&quot;,
             filename=&quot;stickleback_data.R&quot;, name=&quot;stickleback_coordinates&quot;))</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiIyMnIERvd25sb2FkIHRoZSBleGFtcGxlIGRhdGEgc2V0IGZyb20gaGh3YWduZXIxL0xhbmRHZW5Db3Vyc2VEYXRhXG4jIycgIChcXHVybHtodHRwczovL2dpdGh1Yi5jb20vaGh3YWduZXIxL0xhbmRHZW5Db3Vyc2VEYXRhL30pXG4jIycgQHRpdGxlIERvd25sb2FkIGV4YW1wbGUgZGF0YSBzZXRcbiMjJ1xuIyMnIEBwYXJhbSB2ZXJzaW9uIFZlcnNpb24gbnVtYmVyLiAgVGhlIGRlZmF1bHQgd2lsbCBsb2FkIHRoZSBtb3N0XG4jIycgICByZWNlbnQgdmVyc2lvbiBvbiB5b3VyIGNvbXB1dGVyIG9yIHRoZSBtb3N0IHJlY2VudCB2ZXJzaW9uIGtub3duXG4jIycgICB0byB0aGUgcGFja2FnZSBpZiB5b3UgaGF2ZSBuZXZlciBkb3dubG9hZGVkIHRoZSBkYXRhIGJlZm9yZS5cbiMjJyAgIFdpdGggXFxjb2Rle3N0aWNrbGViYWNrX2Nvb3JkaW5hdGVzX2RlbH0sIHNwZWNpZnlpbmcgXFxjb2Rle3ZlcnNpb24gPSBOVUxMfSB3aWxsXG4jIycgICBkZWxldGUgXFxlbXBoe2FsbH0gZGF0YSBzZXRzLlxuIyMnXG4jIycgQHBhcmFtIHBhdGggUGF0aCB0byBzdG9yZSB0aGUgZGF0YSBhdC4gIElmIG5vdCBnaXZlbixcbiMjJyAgIFxcY29kZXtkYXRhc3RvcnJ9IHdpbGwgdXNlIFxcY29kZXtyYXBwZGlyc30gdG8gZmluZCB0aGUgYmVzdCBwbGFjZVxuIyMnICAgdG8gcHV0IHBlcnNpc3RlbnQgYXBwbGljYXRpb24gZGF0YSBvbiB5b3VyIHN5c3RlbS4gIFlvdSBjYW5cbiMjJyAgIGRlbGV0ZSB0aGUgcGVyc2lzdGVudCBkYXRhIGF0IGFueSB0aW1lIGJ5IHJ1bm5pbmdcbiMjJyAgIFxcY29kZXtzdGlja2xlYmFja19jb29yZGluYXRlc19kZWwoTlVMTCl9IChvciBcXGNvZGV7c3RpY2tsZWJhY2tfY29vcmRpbmF0ZXNfZGVsKE5VTEwsIHBhdGgpfSBpZiB5b3VcbiMjJyAgIHVzZSBhIGRpZmZlcmVudCBwYXRoKS5cbiMjJ1xuIyMnIEBleHBvcnRcbm15ZGF0YSA8LSBmdW5jdGlvbih2ZXJzaW9uID0gTlVMTCwgcGF0aCA9IE5VTEwpIHtcbiAgZGF0YXN0b3JyOjpnaXRodWJfcmVsZWFzZV9nZXQobXlkYXRhX2luZm8ocGF0aCksIHZlcnNpb24pXG59XG5cbiMjJyBAZXhwb3J0XG4jIycgQHJkbmFtZSBteWRhdGFcbiMjJ1xuIyMnIEBwYXJhbSBsb2NhbCBMb2dpY2FsIGluZGljYXRpbmcgaWYgbG9jYWwgb3IgZ2l0aHViIHZlcnNpb25zIHNob3VsZFxuIyMnICAgYmUgcG9sbGVkLiAgV2l0aCBhbnkgbHVjaywgXFxjb2Rle2xvY2FsID0gRkFMU0V9IGlzIGEgc3VwZXJzZXQgb2ZcbiMjJyAgIFxcY29kZXtsb2NhbCA9IFRSVUV9LiAgRm9yIFxcY29kZXtzdGlja2xlYmFja19jb29yZGluYXRlc192ZXJzaW9uX2N1cnJlbnR9LCBpZlxuIyMnICAgXFxjb2Rle1RSVUV9LCBidXQgdGhlcmUgYXJlIG5vIGxvY2FsIHZlcnNpb25zLCB0aGVuIHdlIGRvIGNoZWNrXG4jIycgICBmb3IgdGhlIG1vc3QgcmVjZW50IGdpdGh1YiB2ZXJzaW9uLlxuIyMnXG5teWRhdGFfdmVyc2lvbnMgPC0gZnVuY3Rpb24obG9jYWwgPSBUUlVFLCBwYXRoID0gTlVMTCkge1xuICBkYXRhc3RvcnI6OmdpdGh1Yl9yZWxlYXNlX3ZlcnNpb25zKG15ZGF0YV9pbmZvKHBhdGgpLCBsb2NhbClcbn1cblxuIyMnIEBleHBvcnRcbiMjJyBAcmRuYW1lIG15ZGF0YVxubXlkYXRhX3ZlcnNpb25fY3VycmVudCA8LSBmdW5jdGlvbihsb2NhbCA9IFRSVUUsIHBhdGggPSBOVUxMKSB7XG4gIGRhdGFzdG9ycjo6Z2l0aHViX3JlbGVhc2VfdmVyc2lvbl9jdXJyZW50KG15ZGF0YV9pbmZvKHBhdGgpLCBsb2NhbClcbn1cblxuIyMnIEBleHBvcnRcbiMjJyBAcmRuYW1lIG15ZGF0YVxubXlkYXRhX2RlbCA8LSBmdW5jdGlvbih2ZXJzaW9uLCBwYXRoID0gTlVMTCkge1xuICBkYXRhc3RvcnI6OmdpdGh1Yl9yZWxlYXNlX2RlbChteWRhdGFfaW5mbyhwYXRoKSwgdmVyc2lvbilcbn1cblxuIyMgQ29yZSBkYXRhOlxubXlkYXRhX2luZm8gPC0gZnVuY3Rpb24ocGF0aCkge1xuICBkYXRhc3RvcnI6OmdpdGh1Yl9yZWxlYXNlX2luZm8oXCJoaHdhZ25lcjEvTGFuZEdlbkNvdXJzZURhdGFcIixcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGZpbGVuYW1lID0gXCJzdGlja2xlYmFja19kYXRhLlJcIixcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHJlYWQgPSByZWFkLmNzdixcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHBhdGggPSBwYXRoKVxufVxuXG4jIycgTWFpbnRhaW5lci1vbmx5IGZ1bmN0aW9uIGZvciByZWxlYXNpbmcgZGF0YS4gIFRoaXMgd2lsbCBsb29rIGF0XG4jIycgdGhlIHZlcnNpb24gaW4gdGhlIERFU0NSSVBUSU9OIGZpbGUgYW5kIG1ha2UgYSBkYXRhIHJlbGVhc2UgaWYgdGhlXG4jIycgR2l0SHViIHJlcG9zaXRvcnkgY29udGFpbnMgdGhlIHNhbWUgdmVyc2lvbiBhcyB3ZSBoYXZlIGxvY2FsbHkuXG4jIycgUmVxdWlyZXMgdGhlIFxcY29kZXtHSVRIVUJfVE9LRU59IGVudmlyb25tZW50IHZhcmlhYmxlIHRvIGJlIHNldC5cbiMjJ1xuIyMnIEB0aXRsZSBNYWtlIGEgZGF0YSByZWxlYXNlLlxuIyMnIEBwYXJhbSAuLi4gUGFyYW1ldGVycyBwYXNzZWQgdGhyb3VnaCB0byBcXGNvZGV7XFxsaW5re2dpdGh1Yl9yZWxlYXNlX2NyZWF0ZX19XG4jIycgQHBhcmFtIHBhdGggUGF0aCB0byB0aGUgZGF0YSAoc2VlIFxcY29kZXtcXGxpbmt7c3RpY2tsZWJhY2tfY29vcmRpbmF0ZXN9fSkuXG4jIycgQGV4cG9ydFxubXlkYXRhX3JlbGVhc2UgPC0gZnVuY3Rpb24oLi4uLCBwYXRoID0gTlVMTCkge1xuICBkYXRhc3RvcnI6OmdpdGh1Yl9yZWxlYXNlX2NyZWF0ZShteWRhdGFfaW5mbyhwYXRoKSwgLi4uKVxufVxuIn0= -->
-<pre><code>##&#39; Download the example data set from hhwagner1/LandGenCourseData
-##&#39;  (\url{https://github.com/hhwagner1/LandGenCourseData/})
-##&#39; @title Download example data set
-##&#39;
-##&#39; @param version Version number.  The default will load the most
-##&#39;   recent version on your computer or the most recent version known
-##&#39;   to the package if you have never downloaded the data before.
-##&#39;   With \code{stickleback_coordinates_del}, specifying \code{version = NULL} will
-##&#39;   delete \emph{all} data sets.
-##&#39;
-##&#39; @param path Path to store the data at.  If not given,
-##&#39;   \code{datastorr} will use \code{rappdirs} to find the best place
-##&#39;   to put persistent application data on your system.  You can
-##&#39;   delete the persistent data at any time by running
-##&#39;   \code{stickleback_coordinates_del(NULL)} (or \code{stickleback_coordinates_del(NULL, path)} if you
-##&#39;   use a different path).
-##&#39;
-##&#39; @export
-mydata &lt;- function(version = NULL, path = NULL) {
-  datastorr::github_release_get(mydata_info(path), version)
-}
-
-##&#39; @export
-##&#39; @rdname mydata
-##&#39;
-##&#39; @param local Logical indicating if local or github versions should
-##&#39;   be polled.  With any luck, \code{local = FALSE} is a superset of
-##&#39;   \code{local = TRUE}.  For \code{stickleback_coordinates_version_current}, if
-##&#39;   \code{TRUE}, but there are no local versions, then we do check
-##&#39;   for the most recent github version.
-##&#39;
-mydata_versions &lt;- function(local = TRUE, path = NULL) {
-  datastorr::github_release_versions(mydata_info(path), local)
-}
-
-##&#39; @export
-##&#39; @rdname mydata
-mydata_version_current &lt;- function(local = TRUE, path = NULL) {
-  datastorr::github_release_version_current(mydata_info(path), local)
-}
-
-##&#39; @export
-##&#39; @rdname mydata
-mydata_del &lt;- function(version, path = NULL) {
-  datastorr::github_release_del(mydata_info(path), version)
-}
-
-## Core data:
-mydata_info &lt;- function(path) {
-  datastorr::github_release_info(&quot;hhwagner1/LandGenCourseData&quot;,
-                                 filename = &quot;stickleback_data.R&quot;,
-                                 read = read.csv,
-                                 path = path)
-}
-
-##&#39; Maintainer-only function for releasing data.  This will look at
-##&#39; the version in the DESCRIPTION file and make a data release if the
-##&#39; GitHub repository contains the same version as we have locally.
-##&#39; Requires the \code{GITHUB_TOKEN} environment variable to be set.
-##&#39;
-##&#39; @title Make a data release.
-##&#39; @param ... Parameters passed through to \code{\link{github_release_create}}
-##&#39; @param path Path to the data (see \code{\link{stickleback_coordinates}}).
-##&#39; @export
-mydata_release &lt;- function(..., path = NULL) {
-  datastorr::github_release_create(mydata_info(path), ...)
-}</code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+<p>Generate documentation</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGV2dG9vbHM6OmRvY3VtZW50KFwiTGFuZEdlbkNvdXJzZURhdGFcIilcbmBgYCJ9 -->
-<pre class="r"><code>devtools::document(&quot;LandGenCourseData&quot;)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGV2dG9vbHM6OmRvY3VtZW50KClcbmBgYCJ9 -->
+<pre class="r"><code>devtools::document()</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiRXJyb3I6IFtFTk9FTlRdIEZhaWxlZCB0byByZWFsaXplICdMYW5kR2VuQ291cnNlRGF0YSc6IG5vIHN1Y2ggZmlsZSBvciBkaXJlY3RvcnlcbiJ9 -->
-<pre><code>Error: [ENOENT] Failed to realize &#39;LandGenCourseData&#39;: no such file or directory</code></pre>
+<!-- rnb-output-begin eyJkYXRhIjoi4oS5IFVwZGF0aW5nIExhbmRHZW5Db3Vyc2VEYXRhIGRvY3VtZW50YXRpb25cbkZpcnN0IHRpbWUgdXNpbmcgcm94eWdlbjIuIFVwZ3JhZGluZyBhdXRvbWF0aWNhbGx5Li4uXG7ihLkgTG9hZGluZyBMYW5kR2VuQ291cnNlRGF0YVxuc3RpY2tsZWJhY2tfZGF0YS5SZCBpcyBtaXNzaW5nIG5hbWUvdGl0bGUuIFNraXBwaW5nVGhlIGV4aXN0aW5nICdOQU1FU1BBQ0UnIGZpbGUgd2FzIG5vdCBnZW5lcmF0ZWQgYnkgcm94eWdlbjIsIGFuZCB3aWxsIG5vdCBiZSBvdmVyd3JpdHRlbi5cbiJ9 -->
+<pre><code>ℹ Updating LandGenCourseData documentation
+First time using roxygen2. Upgrading automatically...
+ℹ Loading LandGenCourseData
+stickleback_data.Rd is missing name/title. SkippingThe existing &#39;NAMESPACE&#39; file was not generated by roxygen2, and will not be overwritten.</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiV3JpdGluZyBzdGlja2xlYmFja19jb29yZGluYXRlcy5SZFxuV3JpdGluZyBzdGlja2xlYmFja19jb29yZGluYXRlc19yZWxlYXNlLlJkXG5Xcml0aW5nIG15ZGF0YS5SZFxuV3JpdGluZyBzdGlja2xlYmFja19kYXRhX3JlbGVhc2UuUmRcbiJ9 -->
+<pre><code>Writing stickleback_coordinates.Rd
+Writing stickleback_coordinates_release.Rd
+Writing mydata.Rd
+Writing stickleback_data_release.Rd</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiV29ya2Zsb3ciCm91dHB1dDogaHRtbF9ub3RlYm9vawotLS0KCgoKYGBge3J9CmxpYnJhcnkoZGF0YXN0b3JyKQpgYGAKCkltcG9ydCBkYXRhIHNldHMgCgpgYGB7cn0Kd3JpdGVMaW5lcyhhdXRvZ2VuZXJhdGUocmVwbz0iaGh3YWduZXIxL0xhbmRHZW5Db3Vyc2VEYXRhIiwgcmVhZD0icmVhZC50YWJsZSIsCiAgICAgICAgICAgIGZpbGVuYW1lPSJzdGlja2xlYmFja19kYXRhLlIiLCBuYW1lPSJzdGlja2xlYmFja19kYXRhIikpCmBgYAoKYGBge3J9CnN0aWNrbGViYWNrX2RhdGEuUiA8LSB3cml0ZUxpbmVzKGF1dG9nZW5lcmF0ZShyZXBvPSJoaHdhZ25lcjEvTGFuZEdlbkNvdXJzZURhdGEiLCByZWFkPSJmaWxlLmNvcHkiLAogICAgICAgICAgICBmaWxlbmFtZT0ic3RpY2tsZWJhY2suZ2VubyIsIG5hbWU9InN0aWNrbGViYWNrX2RhdGEiKSkKYGBgCgpgYGB7cn0Kc3RpY2tsZWJhY2tfY29vcmRpbmF0ZXMuUiA8LSB3cml0ZUxpbmVzKGF1dG9nZW5lcmF0ZShyZXBvPSJoaHdhZ25lcjEvTGFuZEdlbkNvdXJzZURhdGEiLCAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICByZWFkPSJyZWFkLmNzdiIsCiAgICAgICAgICAgIGZpbGVuYW1lPSJzdGlja2xlYmFja19kYXRhLlIiLCBuYW1lPSJzdGlja2xlYmFja19jb29yZGluYXRlcyIpKQpgYGAKCgoKYGBge3J9CmRldnRvb2xzOjpkb2N1bWVudChMYW5kR2VuQ291cnNlRGF0YSkKYGBgCgo=</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiV29ya2Zsb3ciCm91dHB1dDogaHRtbF9ub3RlYm9vawotLS0KCgoKYGBge3J9CmxpYnJhcnkoZGF0YXN0b3JyKQpgYGAKCkltcG9ydCBkYXRhIHNldHM6CgpDb3B5LXBhc3RlIHRoZSBvdXRwdXQgb2YgdGhpcyBjb2RlIGludG8gdGhlIGNvcnJlc3BvbmRpbmcgUiBmaWxlcy4KCklNUE9SVEFOVDogdGhlbiBmaW5kLXJlcGxhY2UgIm15ZGF0YSIgYnkgInN0aWNrbGViYWNrX2RhdGEiIG9yIGVxdWl2YWxlbnQgKGZpbGVuYW1lKQoKYGBge3J9CndyaXRlTGluZXMoYXV0b2dlbmVyYXRlKHJlcG89Imhod2FnbmVyMS9MYW5kR2VuQ291cnNlRGF0YSIsIHJlYWQ9InJlYWQudGFibGUiLAogICAgICAgICAgICBmaWxlbmFtZT0ic3RpY2tsZWJhY2tfZGF0YS5SIiwgbmFtZT0ic3RpY2tsZWJhY2tfZGF0YSIpKQpgYGAKCgpgYGB7cn0Kd3JpdGVMaW5lcyhhdXRvZ2VuZXJhdGUocmVwbz0iaGh3YWduZXIxL0xhbmRHZW5Db3Vyc2VEYXRhIiwgcmVhZD0icmVhZC5jc3YiLAogICAgICAgICAgICBmaWxlbmFtZT0ic3RpY2tsZWJhY2tfZGF0YS5SIiwgbmFtZT0ic3RpY2tsZWJhY2tfY29vcmRpbmF0ZXMiKSkKYGBgCgoKR2VuZXJhdGUgZG9jdW1lbnRhdGlvbgoKYGBge3J9CmRldnRvb2xzOjpkb2N1bWVudCgpCmBgYAoK</div>
 
 
 

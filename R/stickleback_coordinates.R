@@ -1,6 +1,6 @@
 ##' Download the example data set from hhwagner1/LandGenCourseData
 ##'  (\url{https://github.com/hhwagner1/LandGenCourseData/})
-##' @title Download example data set
+##' @title Stickleback coordinates
 ##'
 ##' @param version Version number.  The default will load the most
 ##'   recent version on your computer or the most recent version known
