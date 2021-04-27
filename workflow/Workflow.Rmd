@@ -1,0 +1,20 @@
+---
+title: "Workflow"
+output: html_notebook
+---
+
+
+
+```{r}
+library(datastorr)
+```
+
+```{r}
+stickleback_data <- writeLines(autogenerate(repo="hhwagner1/LandGenCourse", read="read.table",
+            filename="stickleback_data.txt", name="LandGenCourseData"))
+```
+
+```{r}
+devtools::document("LandGenCourseData")
+```
+
