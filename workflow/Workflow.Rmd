@@ -9,12 +9,27 @@ output: html_notebook
 library(datastorr)
 ```
 
+Import data sets 
+
 ```{r}
-stickleback_data <- writeLines(autogenerate(repo="hhwagner1/LandGenCourseData", read="read.table",
-            filename="stickleback_data.txt", name="stickleback_data"))
+writeLines(autogenerate(repo="hhwagner1/LandGenCourseData", read="read.table",
+            filename="stickleback_data.R", name="stickleback_data"))
 ```
 
 ```{r}
-devtools::document("LandGenCourseData")
+stickleback_data.R <- writeLines(autogenerate(repo="hhwagner1/LandGenCourseData", read="file.copy",
+            filename="stickleback.geno", name="stickleback_data"))
+```
+
+```{r}
+stickleback_coordinates.R <- writeLines(autogenerate(repo="hhwagner1/LandGenCourseData", 
+                                                     read="read.csv",
+            filename="stickleback_data.R", name="stickleback_coordinates"))
+```
+
+
+
+```{r}
+devtools::document(LandGenCourseData)
 ```
 
